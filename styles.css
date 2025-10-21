@@ -1,1 +1,40 @@
 /* Estilos para la aplicación */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bodyPrincipal {
+  background-image: url(imgs/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+.headerPrincipal {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+.articleBody {
+    background: radial-gradient(rgb(231, 211, 31), rgb(134, 82, 4));
+    border-radius: 30px;
+    margin: 10px 150px;
+    padding: 20px 100px 35px;
+}
+.center {
+    background-color:rgb(231, 196, 37);
+    border-radius: 15px;
+    font-weight:bold;
+    text-align: center;
+    margin: 0 150px;
+    padding: 10px;
+}
+.copyright {
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight:bold;
+  text-align: center;
+  padding: 5px;
+}

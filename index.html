@@ -3,40 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="" content="">
-    <link rel="icon" href="" type="icon">
+    <meta name="author" content="Hugo Alejandro Zapata Rosales">
+    <meta name="description" content="API de Star Wars">
+    <meta name="keywords" content="personajes, caracteristicas">
+    <link rel="icon" href="imgs/icono.png" type="image/png">            
     <link rel="stylesheet" href="styles.css">
-    <title>API: Star Wars</title>
+    <title>StarWars wiki</title>
 </head>
-<body>
-    <h1>Star Wars</h1>
-    <section>
-        <!-- Personajes -->
-        <form action="">
-            <label for="nombre">Nombre del personaje:</label>
-            <input type="text" name="nombre" id="nombreBuscar" placeholder="Escribre aquí">
-            <button id="botonBuscar">Buscar</button>
-
-            <h3>Información obtenida del personaje:</h3>
-            <p>Nombre</p>
-            <p id="nombrePersonaje"></p>
-            <p>Especie</p>
-            <p id="especie"></p>
-            <p>Edad</p>
-            <p id="edad"></p>
-            <p>Altura</p>
-            <p id="altura"></p>
-            <p>Fecha de nacimiento</p>
-            <p id="nacimiento"></p>
-            <p>Lugar de origen</p>
-            <p id="origen"></p>
-            <p>Vehiculo</p>
-            <p id="nave"></p>
-            <p>Peliculas en las que aparece</p>
-            <p id="film"></p>
-
-        </form>
-    </section>
-    <script src="main.js"></script>
+<body class="bodyPrincipal">                                                 
+    <center><img class="headerPrincipal" src="imgs/titulo.png" alt=""></center> 
+    <main>
+        <article class="articleBody">                                           <!--  -->
+            <section>
+                <!-- Personajes -->
+                <form action="">
+                    <div class="center">
+                        <label for="nombre">Nombre del personaje:</label>
+                        <input type="text" name="nombre" id="nombreBuscar" placeholder="Eje: Luke Skywalker">
+                        <button id="botonBuscar">Buscar</button>
+                    </div>
+                    <h3>Información obtenida del personaje:</h3>
+                    <h4>Nombre</h4>
+                    <p id="nombrePersonaje"></p>
+                    <h4>Altura</h4>
+                    <p id="altura"></p>
+                    <h4>Peso</h4>
+                    <p id="peso"></p>
+                    <h4>Color de cabello</h4>
+                    <p id="colorPelo"></p>
+                    <h4>Fecha de nacimiento</h4>
+                    <p id="fechaNacimiento"></p>
+                    <h4>Genero</h4>
+                    <p id="genero"></p>
+                    <h4>Especie</h4>
+                    <p id="especie"></p>
+                    <h4>Planeta</h4>
+                    <p id="planeta"></p>
+                    <h4>Vehiculo</h4>
+                    <p id="vehiculo"></p>
+                    <h4>Starship</h4>
+                    <p id="starships"></p>
+                    <h4>Peliculas en las que aparece</h4>
+                    <p id="peliculas"></p>
+                </form>
+            </section>
+        </article>
+        <script src="main.js"></script>
+    </main>
+    <footer class="copyright">
+        <address>
+            <p>Evidencia 2: Práctica 3</p>
+            <p>&copy Desarrollado por el alumno: Hugo Alejandro Zapata Rosales - 2088379</p>
+        </address>
+    </footer>
 </body>
 </html>
