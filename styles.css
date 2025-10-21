@@ -12,9 +12,27 @@
   padding: 0;
 }
 .headerPrincipal {
-    width: 400px;
-    height: auto;
-    margin-top: 20px;
+  display:flex;
+  justify-content: center;    
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+.titulo_starsw {
+  height: 100%;
+}
+#nombreBuscar {
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 25px;
+  outline: 1px solid rgb(148, 67, 13);
+}
+#botonBuscar {
+  background-color: rgb(216, 43, 0);
+  border: 2px solid rgb(255, 99, 99);
+  border-radius: 5px;
+  color: white;
+  outline: 1px solid rgb(194, 47, 10);
 }
 .articleBody {
     background: radial-gradient(rgb(231, 211, 31), rgb(134, 82, 4));
@@ -24,6 +42,7 @@
 }
 .center {
     background-color:rgb(231, 196, 37);
+    border-bottom: 5px solid rgb(148, 67, 13);
     border-radius: 15px;
     font-weight:bold;
     text-align: center;

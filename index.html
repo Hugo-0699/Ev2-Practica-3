@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="styles.css">
     <title>StarWars wiki</title>
 </head>
-<body class="bodyPrincipal">                                                 
-    <center><img class="headerPrincipal" src="imgs/titulo.png" alt=""></center> 
+<body class="bodyPrincipal">  
+    <header class="headerPrincipal">
+        <img class="titulo_starsw" src="imgs/titulo.png" alt=""> 
+    </header>                                               
     <main>
         <article class="articleBody">                                           <!--  -->
+            <div class="center">
+                <label for="nombre">Nombre del personaje:</label>
+                <input type="text" name="nombre" id="nombreBuscar" placeholder=" Eje: Luke Skywalker">
+                <button id="botonBuscar">Buscar</button>
+            </div>
             <section>
                 <!-- Personajes -->
                 <form action="">
-                    <div class="center">
-                        <label for="nombre">Nombre del personaje:</label>
-                        <input type="text" name="nombre" id="nombreBuscar" placeholder="Eje: Luke Skywalker">
-                        <button id="botonBuscar">Buscar</button>
-                    </div>
                     <h3>Información obtenida del personaje:</h3>
                     <h4>Nombre</h4>
                     <p id="nombrePersonaje"></p>

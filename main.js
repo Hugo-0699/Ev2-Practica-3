@@ -17,13 +17,13 @@ const peliculas = document.getElementById("peliculas");
 async function buscarPersonajes (){
     const respuesta = await fetch("https://swapi.dev/api/people/?search=" + nombre.value)
     const info = await respuesta.json();
-    const personaje = info.results[0];
 
+    const personaje = info.results[0];
     if (!personaje) {
-        pnombre.innerText = "x No encontrado x";
-        altura.innerText = peso.innerText = cpelo.innerText = fnacimiento.innerText = 
-        genero.innerText = especie.innerText = planeta.innerText = vehiculo.innerText = 
-        starships.innerText = peliculas.innerText = "";
+        alert("El personaje que ingresaste no existe o no fue encontrado.");
+        pnombre.innerText = altura.innerText = peso.innerText = cpelo.innerText = 
+        fnacimiento.innerText = genero.innerText = especie.innerText = planeta.innerText = 
+        vehiculo.innerText = starships.innerText = peliculas.innerText = "No encontrado";
         return;
     }
 
@@ -41,7 +41,7 @@ async function buscarPersonajes (){
 
     /* 
     Al traer todos los datos, estos de aqui abajo llegan con un URL 
-    (que alentrar te llevan a un string, osea que en esta API no hay imgs solo texto), 
+    (que al entrar te llevan a un string, osea que en esta API no hay imgs solo texto), 
     por lo que tocará traerlos con los datos correspondientes.
     */
 
