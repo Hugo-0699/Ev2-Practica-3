@@ -10,14 +10,21 @@
     <link rel="stylesheet" href="styles.css">
     <title>StarWars wiki</title>
 </head>
-<body class="bodyPrincipal">  
+<body>  
     <header class="headerPrincipal">
-        <img class="titulo_starsw" src="imgs/titulo.png" alt=""> 
+        <img class="titulo-img" src="imgs/titulo.png" alt=""> 
+        <h1>WIKI</h1>
     </header>                                               
     <main>
-        <article class="articleBody">                                           <!--  -->
+        <div class="copyright">
+            <p>
+                ¡En esta wiki podrás acceder a los datos básicos de todos 
+                los personajes que protagonizaron el universo cinematográfico de Star Wars!
+            </p>
+        </div>
+        <article>
             <div class="center">
-                <label for="nombre">Nombre del personaje:</label>
+                <label for="nombre">Nombre del personaje: </label>
                 <input type="text" name="nombre" id="nombreBuscar" placeholder=" Eje: Luke Skywalker">
                 <button id="botonBuscar">Buscar</button>
             </div>
@@ -31,12 +38,14 @@
                     <p id="altura"></p>
                     <h4>Peso</h4>
                     <p id="peso"></p>
+                    <h4>Color de ojos</h4>
+                    <p id="colorOjos"></p>
                     <h4>Color de cabello</h4>
                     <p id="colorPelo"></p>
-                    <h4>Fecha de nacimiento</h4>
-                    <p id="fechaNacimiento"></p>
                     <h4>Genero</h4>
                     <p id="genero"></p>
+                    <h4>Fecha de nacimiento</h4>
+                    <p id="fechaNacimiento"></p>
                     <h4>Especie</h4>
                     <p id="especie"></p>
                     <h4>Planeta</h4>
