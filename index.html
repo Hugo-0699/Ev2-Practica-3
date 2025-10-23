@@ -11,59 +11,70 @@
     <title>StarWars wiki</title>
 </head>
 <body>  
-    <header class="headerPrincipal">
-        <img class="titulo-img" src="imgs/titulo.png" alt=""> 
+    <header>
+        <img class="header-img" src="imgs/titulo.png" alt=""> 
         <h1>WIKI</h1>
     </header>                                               
     <main>
-        <div class="copyright">
-            <p>
-                ¡En esta wiki podrás acceder a los datos básicos de todos 
-                los personajes que protagonizaron el universo cinematográfico de Star Wars!
-            </p>
+        <div class="desc">
+            <p>¡Después de horas de ver películas y buscar contenido en línea, les presentamos esta wiki, en la cual podrás acceder a los datos básicos de los <strong>personajes</strong> que protagonizaron el universo cinematográfico de <i>Star Wars</i>!</p>
+            <p style="font-size: small;"><strong>(Los personajes que hayan aparecido después de las dos primeras trilogías originales no estarán disponibles)</strong></p>
         </div>
         <article>
             <div class="center">
-                <label for="nombre">Nombre del personaje: </label>
+                <label for="nombre">¿A quién deseas buscar? : </label>
                 <input type="text" name="nombre" id="nombreBuscar" placeholder=" Eje: Luke Skywalker">
                 <button id="botonBuscar">Buscar</button>
             </div>
             <section>
-                <!-- Personajes -->
-                <form action="">
-                    <h3>Información obtenida del personaje:</h3>
-                    <h4>Nombre</h4>
-                    <p id="nombrePersonaje"></p>
-                    <h4>Altura</h4>
-                    <p id="altura"></p>
-                    <h4>Peso</h4>
-                    <p id="peso"></p>
-                    <h4>Color de ojos</h4>
-                    <p id="colorOjos"></p>
-                    <h4>Color de cabello</h4>
-                    <p id="colorPelo"></p>
-                    <h4>Genero</h4>
-                    <p id="genero"></p>
-                    <h4>Fecha de nacimiento</h4>
-                    <p id="fechaNacimiento"></p>
-                    <h4>Especie</h4>
-                    <p id="especie"></p>
-                    <h4>Planeta</h4>
-                    <p id="planeta"></p>
-                    <h4>Vehiculo</h4>
-                    <p id="vehiculo"></p>
-                    <h4>Starship</h4>
-                    <p id="starships"></p>
-                    <h4>Peliculas en las que aparece</h4>
-                    <p id="peliculas"></p>
-                </form>
+                <h3 style="color: rgb(70, 30, 2);">Información obtenida del personaje:</h3>
+                <div class="columnas">
+                    <div>
+                        <h4>Nombre:</h4>
+                        <p id="nombrePersonaje"></p>
+                        <h4>Altura:</h4>
+                        <p id="altura"></p>
+                        <h4>Peso:</h4>
+                        <p id="peso"></p>
+                    </div>
+                    <div>
+                        <h4>Género:</h4>
+                        <p id="genero"></p>
+                        <h4>Color de ojos:</h4>
+                        <p id="colorOjos"></p>
+                        <h4>Color de cabello:</h4>
+                        <p id="colorPelo"></p>
+                    </div>
+                    <div>
+                        <h4>Fecha de nacimiento:</h4>
+                        <p id="fechaNacimiento"></p>
+                        <h4>Especie:</h4>
+                        <p id="especie"></p>
+                        <h4>Planeta de origen:</h4>
+                        <p id="planeta"></p>
+                    </div>
+                </div>
+                <div class="columnas">
+                    <div class="fila">
+                        <h4>Vehículos:</h4>
+                        <ul id="vehiculo"></ul>
+                    </div>
+                    <div class="fila">
+                        <h4>Nave estelar:</h4>
+                        <ul id="starships"></ul>
+                    </div>
+                    <div class="fila">
+                        <h4>Peliculas en las que aparece:</h4>
+                        <ul id="peliculas"></ul>
+                    </div>
+                </div>
             </section>
         </article>
         <script src="main.js"></script>
     </main>
-    <footer class="copyright">
+    <footer class="desc">
         <address>
-            <p>Evidencia 2: Práctica 3</p>
+            <p>Fundamentos del Desarrollo Web: Evidencia 2 / Práctica 3 con swapi</p>
             <p>&copy Desarrollado por el alumno: Hugo Alejandro Zapata Rosales - 2088379</p>
         </address>
     </footer>

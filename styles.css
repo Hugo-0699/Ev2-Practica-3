@@ -1,4 +1,4 @@
-/* Estilos para la aplicación */
+/* CSS */
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -11,37 +11,36 @@ body {
   margin: 0;
   padding: 0;
 }
-.headerPrincipal {
+header {
   display:flex;
   justify-content: center;    
   height: 200px;
   width: 100%;
   margin-top: 30px;
 }
-.titulo-img {
+.header-img {
   height: 100%;
   margin-left: 70px;
 }
 h1 {
-  color: rgb(255, 211, 67);
+  color: rgb(255, 0, 0);
   font-family:Georgia, 'Times New Roman', Times, serif;
   margin: 10px;
 }
 article {
-  background: radial-gradient(rgb(231, 211, 31), rgb(134, 82, 4));
-  border-bottom: 10px solid rgb(109, 51, 12);
+  background: radial-gradient(rgb(224, 202, 74), rgb(196, 135, 24));
+  box-shadow: 0 0 30px rgba(253, 253, 253, 0.2);
   border-radius: 30px;
   margin: 5px 150px;    
   padding: 20px 100px 35px;
 }
 .center {
-  background-color:rgb(231, 196, 37);
-  border-bottom: 5px solid rgb(148, 67, 13);
+  background: radial-gradient(rgb(253, 232, 114), rgb(228, 186, 0));
   border-radius: 15px;
   color: rgb(70, 30, 2);
   font-weight:bold;
   text-align: center;
-  margin: 0 150px;
+  margin: 0 130px;
   padding: 10px;
 }
 #nombreBuscar {
@@ -60,11 +59,48 @@ article {
   outline: 1px solid rgb(194, 47, 10);
   padding: 4px 25px;
 }
-.copyright {
+#botonBuscar:hover {
+  background-color: rgb(134, 15, 15);
+  outline: 1px solid rgb(75, 2, 2);
+}
+.columnas {
+  background-color: rgb(250, 232, 140);
+  border-radius: 15px;
+  color: rgb(80, 30, 0);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.columnas div {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+.columnas h4 {
+  margin-bottom: 5px;
+  color: rgb(110, 30, 0);
+}
+.columnas p {
+  margin-top: 0;
+  color: rgb(60, 20, 0);
+}
+.fila {
+  background-color: rgb(250, 232, 140);
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  color: rgb(80, 30, 0);
+  margin-top: 20px;
+  padding: 15px;
+}
+.desc {
   background: transparent;
-  color: white;
+  color: rgb(255, 203, 60);
   font-size: 15px;
   font-weight:bold;
   text-align: center;
+  margin: 0 185px;
   padding: 5px;
 }
